@@ -1,12 +1,24 @@
 package classesobjects;
 
 public class Car {
-    String maker;
+    static String maker;
     String model;
     short year;
     boolean isAutomatic;
     int mileage;
-    short speed;
+    private short speed;
+
+    public short getSpeed(){
+        return this.speed;
+    }
+
+    public void setSpeed(short speed){
+        if(speed < 0){
+            System.out.println("enter valid speed");
+            return;
+        }
+        this.speed = speed;
+    }
 
     //def constructor
     Car(){
@@ -27,5 +39,9 @@ public class Car {
     void displayInfo(){
         System.out.println(maker);
         System.out.println(model);
+    }
+
+    static void displayMaker(){
+        System.out.println(maker);
     }
 }
