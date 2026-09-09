@@ -9,17 +9,22 @@
 
 
 void main(){
-    Scanner sc = new Scanner(System.in);
-    int minutes = sc.nextInt();
-    double basicBill = (minutes / 3.0) * 5;
-    double addedBill = basicBill + 5.5;
-    double discountedBill = addedBill;
-    if(addedBill > 30) discountedBill -= addedBill * 0.05;
-    System.out.printf("Basic: %.2f \n",basicBill);
-    System.out.println(addedBill);
-    System.out.println(discountedBill);
+    int[] array = {4, 5, 6};
+    changeArray(array);
+    System.out.println(Arrays.toString(array));
 }
 
+void changeArray(int[] a){
+    a[0] = 10;
+}
+
+void changeName(String n){
+    n = "daquigan";
+}
+
+void changeX(int x){
+    x++;
+}
 
 
 

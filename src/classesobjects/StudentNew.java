@@ -7,6 +7,14 @@ public class StudentNew {
     private double gpa;
     private static int studentCount = 0;
 
+    public StudentNew() {
+        name = "";
+        age = 0;
+        studentId = "";
+        gpa = 0;
+        studentCount++;
+    }
+
     public StudentNew(String name, int age, String studentId, double gpa) {
         this.name = name;
         this.age = age;

@@ -1,15 +1,15 @@
 package classesobjects;
 
+import java.util.ArrayList;
+
 public class StudentDemo {
     static void main() {
-        //create instance
-        //class obj = new constructor();
-        Student s1 = new Student();
-
-        //invoke
-        s1.name = "jericho";
-        s1.recite();
-        Student s2 = new Student();
-        s2.recite();
+        //arraylist
+        //ArrayList obj = new ArrayList();
+        ArrayList<StudentNew> list = new ArrayList<StudentNew>();
+        StudentNew s = new StudentNew();
+        list.add(s);
+        list.add(new StudentNew("rie",6,"45",5.6));
+        System.out.println(list.toArray().length);
     }
 }
