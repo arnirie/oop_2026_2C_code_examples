@@ -15,7 +15,7 @@ public class Employee {
         this.department = department;
     }
 
-    protected final void display(){
+    protected  void display(){
         System.out.println(name );
         System.out.println(department);
         IO.println(pay);
