@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class SwingDemo {
     static void main() {
-        JFrame frame = new AnotherComponents();
+        JFrame frame = new OtherComponents();
         frame.setVisible(true);
 //        LoginFrame f = new LoginFrame();
 //        f.setVisible(true);
